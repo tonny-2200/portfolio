@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tonny Thombare | AI Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f8fb;
+      color: #222;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2563eb;
+    }
+
+    header {
+      background: linear-gradient(to right, #1e3a8a, #384fb2);
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    header .header-content {
+      max-width: 800px;
+      margin: auto;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-weight: 300;
+      font-size: 1.2em;
+      margin-top: 0;
+      color: #dbeafe;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideUp 0.8s ease-out forwards;
+    }
+
+    section:nth-of-type(2) {
+      animation-delay: 0.4s;
+    }
+
+    section:nth-of-type(3) {
+      animation-delay: 0.6s;
+    }
+
+    section h2 {
+      font-size: 2em;
+      color: #1e3a8a;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 1.1em;
+      color: #444;
+      line-height: 1.6;
+      max-width: 1500px;
+      margin: auto;
+    }
+
+    .project {
+      background-color: #ffffff;
+      border-left: 5px solid #2563eb;
+      margin-bottom: 30px;
+      padding: 25px 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInProject 0.7s ease-out forwards;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #1e3a8a;
+      font-size: 1.8em;
+    }
+
+    .project p {
+      margin: 10px 0 15px;
+      font-size: 1em;
+      color: #444;
+    }
+
+    .project a {
+      font-weight: 600;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .skill-item {
+      background-color: #e0ecff;
+      color: #1e3a8a;
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-size: 0.95em;
+      font-weight: 500;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      animation: popIn 0.4s ease forwards;
+    }
+
+    .skill-item:hover {
+      background-color: #bfdbfe;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #e0ecff;
+      padding: 20px 15px;
+      color: #333;
+      font-size: 0.9em;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .footer-container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .footer-contact {
+      margin-bottom: 12px;
+    }
+
+    .footer-contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInProject {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes popIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <h1>Tanmay Thombare</h1>
+    <h2>AI/ML · Computer Vision · Large Language Models · Web Scraping</h2>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- About Me -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Hey, I’m Tanmay! Deeply passionate about AI and tech, constantly exploring how machines can learn, understand and interact with the world — whether through vision, speech or language. Focusing on solving real-world problems using machine learning, computer vision and natural language processing. Eager to learn new tech and tools, I thrive on turning challenges into creative solutions and I'm looking for opportunities to contribute, grow and help teams build intelligent systems.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>📰 Uberblick - AI News Summarizer</h3>
+      <p>Developed a Python-based news summarization web app. Used Scrapy to scrape daily news across categories and a custom LLM-based summarizer to generate concise summaries. A Python script automates daily scraping and overwrites the news.json file which is pushed to github. The frontend presents the latest summaries in a dynamic, category-based UI with a clean and responsive design.</p>
+      <a href="https://tonny-2200.github.io/uberblick/" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+      <h3>🧮 Math Listener</h3>
+      <p>Created a speech-driven math assistant using Python and Whisper for speech-to-text. Designed to recognize spoken math expressions (e.g., "x squared plus 3x equals zero") and convert them into readable equations using a custom text-to-equation parser. Built a simple Flask web interface to record audio, transcribe it, and display the parsed math expression. Tailored for ease of use with support for terms like powers, modulo, permutation, and integration.</p>
+      <a href="https://github.com/tonny-2200/Math_Listener" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>🔢 Digit Recognition</h3>
+      <p>Recreated a research paper's CNN-based digit recognition model using the MNIST dataset, experimenting with various activation functions and learning rates to improve accuracy. Deployed the model through a custom Flask web app with a Drawing Game UI, allowing users to draw digits on a canvas and receive real-time predictions. Focused on model generalization, image preprocessing, and delivering an intuitive user experience.</p>
+      <a href="https://github.com/tonny-2200/digit_recog_web" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <h2>Skills & Tools</h2>
+    <div class="skills-grid">
+      <div class="skill-item">Python</div>
+      <div class="skill-item">TensorFlow</div>
+      <div class="skill-item">Pytorch</div>
+      <div class="skill-item">OpenCV</div>
+      <div class="skill-item">Flask</div>
+      <div class="skill-item">Scrapy</div>
+      <div class="skill-item">Beautiful Soup</div>
+    </div>
+  </section>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <h2 style="color:#1e3a8a; font-size: 2.5em; margin-bottom: 10px;">Contact Info</h2>
+    <div class="footer-contact">
+      <p>📧 tanmaythombare2200@gmail.com</p>
+      <p>🔗 <a href="https://github.com/tonny-2200" target="_blank">GitHub</a> | 
+         <a href="https://www.linkedin.com/in/tanmaythombare/" target="_blank">LinkedIn</a></p>
+    </div>
+    <p>© 2025 Tanmay Thombare</p>
+  </div>
+</footer>
+
+</body>
+</html>
